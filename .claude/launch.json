@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "quiz-app",
+      "runtimeExecutable": "wsl.exe",
+      "runtimeArgs": [
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "bash",
+        "/home/olehelgesen/demo/fable-quiz-app/wslrun.sh",
+        "npm",
+        "start"
+      ],
+      "port": 3000,
+      "autoPort": false
+    }
+  ]
+}

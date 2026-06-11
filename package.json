@@ -1,0 +1,19 @@
+{
+  "name": "fable-quiz-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kahoot/Blooket-style live quiz game built on the Node ecosystem",
+  "type": "module",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm start -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
